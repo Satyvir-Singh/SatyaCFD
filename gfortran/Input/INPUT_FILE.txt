@@ -1,0 +1,32 @@
+!**************************************************************************
+!**********          2D-DISCONTINUOUS GALERKIN SOLVER          ***********!        
+!******                    INPUT FILE                               ******!
+!*************************************************************************!
+
+!############################ NUMBER OF NODES IN COMPUTATIONAL DOMAIN 
+NUMBER OF NODES (X-SPACE)            :  200
+NUMBER OF NODES (Y-SPACE)            :  100
+
+!############################ COMPUTATIONAL DOMAIN INFROMATION 
+DOMAIN X-MIN                         :  0.0
+DOMAIN X-MAX                         :  250.0
+DOMAIN Y-MIN                         :  0.0
+DOMAIN Y-MAX                         :  110.0
+
+!############################ BOUNDARY CONDITIONS
+LEFT BOUNDARY                        :  INFLOW
+RIGHT BOUNDARY                       :  OUTFLOW    ! OUTFLOW - NO-SLIP - REFLECTIVE -  SYMMETRY
+BOTTOM BOUNDARY                      :  OUTFLOW    ! OUTFLOW - NO-SLIP - REFLECTIVE - SYMMETRY
+TOP BOUNDARY                         :  OUTFLOW    ! OUTFLOW - NO-SLIP - REFLECTIVE - SYMMETRY
+
+!############################ STABILITY INFROMATION
+CFL NUMBER                           : 0.2
+FINAL TIME                           : 30.0
+PRINT STEP                           : 100
+                                                       
+!############################ PHYSICAL QUANTITIES INFROMATIONS
+GAS TYPE                             : N2             ! ARGON - N2 - CH4 -  CO2
+GOVERNING EQUATION                   : EULER          ! EULER - NSF - NF
+INCOMING SHOCK MACH                  : 1.22            
+SHOCK POSITION                       : 30.0
+                               
